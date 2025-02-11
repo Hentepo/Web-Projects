@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon</title>
+    <meta name="description" content="A brief description">
+    <meta name="author" content="Little Lemon Restaurant">
+
+    <!-- Include your CSS files here -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+</head>
+
+<body class="book-page">
+    <header>
+        <img src="Img1.png" alt="Little Lemon Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="book.html">Book</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form id="bookingForm">
+            <section class="table size">
+                <h3>Table Size</h3>
+                <label for="tableSize">Choose Table Size:</label>
+                <input list="tableSizes" id="tableSize" name="tableSize">
+                <datalist id="tableSizes">
+                    <option value="2">
+                    <option value="4">
+                    <option value="6">
+                    <option value="8">
+                    <option value="10">
+                    <option value="12">
+                </datalist>
+            </section>
+    
+            <section class="choose menu">
+                <h3>Menu</h3>
+                <label for="menu">Choose Menu:</label>
+                <input list="chooseMenu" id="menu" name="menu">
+                <datalist id="chooseMenu">
+                    <option value="Mediterranean Menu">
+                </datalist>
+            </section>
+    
+            <h3>Date</h3>
+            <label for="date">Pick a date:</label>
+            <input type="date" id="date" name="date"> <br>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
+
+    <footer>
+        <div class="footer-section footer-left">
+            <img src="Img2.png" alt="Footer Logo">
+        </div>
+        <div class="footer-section footer-cebter">
+            <p>Copyright Little Lemon</p>
+        </div>
+        <div class="footer-section footer-center">
+            <p><strong>Opening Hours</strong></p>
+            <p>Mon-Fri: 09:00 - 21:00</p>
+            <p>Sat: 10:00 - 21:00</p>
+            <p>Sun: 12:00 - 18:00</p>
+        </div>
+
+
+
+    </footer>
+    
+
+</body>
+
+</html>

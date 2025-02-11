@@ -1,0 +1,355 @@
+body {
+    background-color: #FFF9C4 ;
+    font-family: 'Markazi Text', serif;
+    color: #556B2F;    
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1, h2 {
+    color: #E07A5F;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 4rem;
+    text-align: center; /* Center the text horizontally */
+    max-width: 80%; /* Optional: limit the width to 80% of the container */
+    margin: 0 auto; /* Center the paragraph block horizontally */
+    padding: 0 1rem; /* Optional: add padding on left and right for better readability */
+}
+
+article {
+    flex:1;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-bottom: 1.5rem; /* Adds space below navbar */    
+}
+
+nav {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #556B2F;
+    padding: 0.625rem 0;
+    border-radius: 0.625rem;
+    margin-bottom: 1.5rem; /* Adds space below navbar */    
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0.9375rem;
+}
+
+nav a {
+    font-size: 1.125rem;
+    padding: 0.625rem 0.9375rem;
+    text-decoration: none;
+    color: #FFF9C4;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #E07A5F;
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparent effect */
+    border-radius: 0.3125rem; /* Slight rounding */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+
+/*------------------------------------------------------------------*/
+
+/* Make the link behave like a block element to cover the entire section */
+.section-link {
+    display: block;
+    text-decoration: none;  /* Remove underline from the link */
+}
+
+.section-one {
+    width: 59%;  /* Ensure consistent width */
+    margin: 0 auto;
+    background-image: url('ClosePic1.jpg');  /* Path to your image */
+    background-size: cover;  /* Cover entire section */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;  /* Prevent tiling */
+    padding: 2rem;  /* Add padding so content inside is visible */
+    color: white;  /* Ensure text is readable */
+    border-radius: 0.625rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.section-one:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.02);
+}
+
+
+/*------------------------------------------------------------------*/
+
+.section-two {
+    width: 60%;  /* Ensure consistent width */
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;  /* Add padding so content inside is visible */}
+
+.article-one img {
+    display: block;   /* Ensures it appears above text */
+    width: 100%;      /* Adjust size to fit article */
+    max-height: 200px; /* Limit height if needed */
+    object-fit: cover; /* Prevents distortion */
+    margin-bottom: 1rem; /* Adds space below image */
+    transition: all 0.3s ease-in-out;
+}    
+
+.article-one img:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.02);
+}
+
+.article-two img {
+    display: block;   /* Ensures it appears above text */
+    width: 100%;      /* Adjust size to fit article */
+    max-height: 200px; /* Limit height if needed */
+    object-fit: cover; /* Prevents distortion */
+    margin-bottom: 1rem; /* Adds space below image */
+    transition: all 0.3s ease-in-out; 
+}
+
+.article-two img:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.02);
+}
+
+.article-three img {
+    display: block;   /* Ensures it appears above text */
+    width: 100%;      /* Adjust size to fit article */
+    max-height: 200px; /* Limit height if needed */
+    object-fit: cover; /* Prevents distortion */
+    margin-bottom: 1rem; /* Adds space below image */
+    transition: all 0.3s ease-in-out;
+}
+
+.article-three img:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.02);
+}
+
+/*------------------------------------------------------------------*/
+
+/* Flex container for starters content */
+.starters-content {
+    display: flex;
+    justify-content: space-between; /* Distribute space between the text and image */
+    align-items: center; /* Vertically align items */
+    gap: 20px; /* Add some space between text and image */
+}
+
+.starters h3 {
+    font-size: 3.5rem; /* Adjust size as needed */
+    color: #E07A5F; /* Optional: Adjust color */
+    font-weight: bold; /* Optional: Make it stand out */
+}
+
+/* Styling for text content */
+.starters-text {
+    font-size: 2rem; /* Adjust font size for list items */
+    flex: 1; /* Take up available space */
+    max-width: 60%; /* Limit the width to 60% */
+}
+
+/* Styling for the image content */
+.starters-image-container {
+    flex: 1; /* Take up available space */
+    max-width: 40%; /* Limit the width to 40% */
+}
+
+/* Ensure the image fits properly */
+.starters-image {
+    width: 55%;
+    height: auto;
+    border-radius: 8px; /* Optional: to add rounded corners */
+}
+
+.starters-image:hover {
+    transform: scale(1.05); /* Slightly enlarge */
+    opacity: 0.9; /* Reduce opacity */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Flex container for main course content */
+.main-course-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Adds spacing between the image and text */
+}
+
+/* Styling for text content */
+.main-course-text {
+    font-size: 2rem; /* Adjust font size for list items */
+    flex: 1; /* Take up available space */
+    max-width: 60%; /* Limit the width to 60% */
+}
+
+.main-course h3 {
+    font-size: 3.5rem; /* Adjust size as needed */
+    color: #E07A5F; /* Optional: Adjust color */
+    font-weight: bold; /* Optional: Make it stand out */
+}
+
+/* Styling for the image container */
+.main-course-image-container {
+    flex: 2; /* 20% of the total space */
+    max-width: 20%;
+}
+
+/* Styling for text content */
+.main-course-text {
+    flex: 8; /* 80% of the total space */
+    max-width: 80%;
+}
+
+/* Ensure image fits within its container */
+.main-course-image {
+    width: 100%; /* Ensure image fits the container */
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners for image */
+}
+
+.main-course-image:hover {
+    transform: scale(1.05); /* Slightly enlarge */
+    opacity: 0.9; /* Reduce opacity */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Flex container for starters content */
+.deserts-content {
+    display: flex;
+    justify-content: space-between; /* Distribute space between the text and image */
+    align-items: center; /* Vertically align items */
+    gap: 20px; /* Add some space between text and image */
+}
+
+/* Styling for text content */
+.deserts-text {
+    font-size: 2rem; /* Adjust font size for list items */
+    flex: 1; /* Take up available space */
+    max-width: 60%; /* Limit the width to 60% */
+}
+
+.deserts h3 {
+    font-size: 3.5rem; /* Adjust size as needed */
+    color: #E07A5F; /* Optional: Adjust color */
+    font-weight: bold; /* Optional: Make it stand out */
+}
+
+/* Styling for text content */
+.deserts-text {
+    flex: 1; /* Take up available space */
+    max-width: 60%; /* Limit the width to 60% */
+}
+
+/* Styling for the image content */
+.deserts-image-container {
+    flex: 1; /* Take up available space */
+    max-width: 40%; /* Limit the width to 40% */
+}
+
+/* Ensure the image fits properly */
+.deserts-image {
+    width: 55%;
+    height: auto;
+    border-radius: 8px; /* Optional: to add rounded corners */
+}
+
+.deserts-image:hover {
+    transform: scale(1.05); /* Slightly enlarge */
+    opacity: 0.9; /* Reduce opacity */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+/*------------------------------------------------------------------*/
+
+footer {
+    width: 60%;  /* Ensure the same width as nav & sections */
+    margin: 0 auto;  /* Center the footer */
+    display: flex;
+    justify-content: center; /* Center content inside */
+    align-items: center; /* Vertically align content */
+    background-color: #FFF9C4;
+    color: #556B2F; 
+    padding: 1rem 0;  /* Add some padding for better spacing */
+    border-radius: 0.625rem;
+    text-align: center;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer > div > img {
+    display: block;
+    margin-left: 0; 
+    margin-right: auto;
+    width: 5%;
+}
+
+
+/*------------------------------------------------------------------*/
+
+/* Styles only for book.html */
+.book-page main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+
+.book-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    font-size: 1.4rem;
+}
+
+
+/*------------------------------------------------------------------*/
+
+
+/* Styles only for book.html */
+/* Center the paragraph in the middle of the page */
+.about-page main section p {
+    text-align: center; /* Center the text horizontally */
+    max-width: 60%; /* Optional: limit the width to 80% of the container */
+    margin: 0 auto; /* Center the paragraph block horizontally */
+    padding: 0 2rem; /* Optional: add padding on left and right for better readability */
+    font-size: 2rem;
+}
