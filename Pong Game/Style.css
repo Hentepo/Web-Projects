@@ -1,0 +1,13 @@
+body {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  width: 800px; /* Match canvas width */
+  margin: 20px auto;
+  font-size: 24px;
+}
