@@ -1,7 +1,52 @@
 body {
-  background-color: white;
-  color: black;
+  background: linear-gradient(to bottom, #001f3d, #00468c);  /* Blue gradient */
+  color: white;
   text-align: center;
+}
+
+#pong {
+  border: 5px solid #ffffff;  /* White border around canvas */
+  background-color: #0b0b2c;  /* Dark background for the game */
+}
+
+.header {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;  /* Futuristic font */
+  text-decoration: none;
+  color: white;
+}
+
+.header .letterP {
+  color: red;
+}
+
+.header .letterO {
+  color: blue;
+}
+
+.header .letterN {
+  color: green;
+}
+
+.header .letterG1 {
+  color: gray;
+}
+
+.header .letterG2 {
+  color: yellow;
+}
+
+.header .letterA {
+  color: pink;
+}
+
+.header .letterM {
+  color: cyan;
+}
+
+.header .letterE {
+  color: rgb(94, 94, 102);
 }
 
 .scoreboard {
@@ -10,4 +55,35 @@ body {
   width: 800px; /* Match canvas width */
   margin: 20px auto;
   font-size: 24px;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 10px #000000;
+}
+
+.left-score, .right-score {
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.left-score {
+  color: cyan;
+}
+
+.right-score {
+  color: red;
+}
+
+#number1, #number2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
+}
+
+#start-button {
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
 }

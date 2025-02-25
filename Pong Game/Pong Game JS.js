@@ -1,6 +1,8 @@
 // Get the canvas element and its context
 const canvas = document.getElementById("pong");
 const ctx = canvas.getContext("2d");
+// Get the start button element
+const startButton = document.getElementById("start-button");
 
 let scoreLeft = 0;
 
@@ -37,18 +39,31 @@ let rightPaddle = {
 };
 
 function drawPaddles() {
-    ctx.fillStyle = "#000"; // Paddle color
-    ctx.fillRect(leftPaddle.x, leftPaddle.y, leftPaddle.width, leftPaddle.height);
-    ctx.fillRect(rightPaddle.x, rightPaddle.y, rightPaddle.width, rightPaddle.height);
-  }
+  ctx.fillStyle = "#00ffff"; // Neon cyan color for paddles
+  ctx.shadowBlur = 20; // Adding a glow effect
+  ctx.shadowColor = "#00ffff";  // Glow color
+  
+  ctx.fillRect(leftPaddle.x, leftPaddle.y, leftPaddle.width, leftPaddle.height);
+  ctx.fillRect(rightPaddle.x, rightPaddle.y, rightPaddle.width, rightPaddle.height);
+  ctx.shadowBlur = 0;  // Reset shadow effect after paddles are drawn
+}
 
-  function drawBall() {
-    ctx.beginPath();
-    ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2); // Draw a circle
-    ctx.fillStyle = "#000";  // Set color to black
-    ctx.fill();              // Fill the ball with color
-    ctx.closePath();
-  }
+function drawBall() {
+  ctx.beginPath();
+  ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2); // Draw a circle
+  ctx.fillStyle = "#ff00ff";  // Neon pink color for the ball
+  ctx.shadowBlur = 15; // Adding a glow effect
+  ctx.shadowColor = "#ff00ff";  // Glow color
+  ctx.fill();              // Fill the ball with color
+  ctx.closePath();
+}
+
+function resetBall() {
+  ball.x = 400;       // Ball's x position (centered horizontally on the canvas)
+  ball.y = 200;      // Ball's y position (centered vertically on the canvas)
+  ball.dx = 2,        // Ball's horizontal speed (movement per frame)
+  ball.dy = 2         // Ball's vertical speed (movement per frame)
+}
 
   function updateBallPosition() {
     ball.x += ball.dx;  // Move the ball horizontally
@@ -75,8 +90,8 @@ function drawPaddles() {
     ball.y <= rightPaddle.y + rightPaddle.height) {
   ball.dx = -ball.dx;  // Reverse horizontal direction
 }
-}
 
+}
   function updateScore() {
     if (ball.x - ball.radius <= 0) {  // If ball touches the left wall
         scoreRight += 1; // Right player scores
@@ -90,8 +105,6 @@ function drawPaddles() {
     document.getElementById("number1").textContent = scoreLeft;
     document.getElementById("number2").textContent = scoreRight;
 }
-
-
 
   document.addEventListener("keydown", function (e) {
     if (e.key === "w") {  // Move up (W or ArrowUp)
@@ -118,5 +131,13 @@ function draw() {
     updateScore();
   }
   
-  // Start the game loop
-  draw();
+// Function to start the game loop
+function startGame() {
+  draw();  // Start the game loop
+}
+
+// Add event listener to start the game when the button is clicked
+startButton.addEventListener("click", function() {
+  startButton.style.display = "none";  // Hides the button
+  startGame();  // Call the function to start the game
+});

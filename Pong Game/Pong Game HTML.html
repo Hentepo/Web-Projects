@@ -7,10 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pong Game</title>
 </head>
+<h1 class="header">
+  <span class="letterP">P</span>
+  <span class="letterO">O</span>
+  <span class="letterN">N</span>
+  <span class="letterG1">G</span>
+  <span class="letter_space"> </span> <!-- Space between words -->
+  <span class="letterG2">G</span>
+  <span class="letterA">A</span>
+  <span class="letterM">M</span>
+  <span class="letterE">E</span>
+</h1>
+
 <body>
+  <button id="start-button">Start Game</button>
   <div class="scoreboard">
-    <p>Left Score: <span id="number1">0</span></p>
-    <p>Right Score: <span id="number2">0</span></p>
+    <p class="left-score">Left Score: <span id="number1" >0</span></p>
+    <p class="right-score">Right Score: <span id="number2">0</span></p>
   </div>
   <canvas id="pong" width="800" height="400"></canvas>
   <script src="Pong Game JS.js"></script>
