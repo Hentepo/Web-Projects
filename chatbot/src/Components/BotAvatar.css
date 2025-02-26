@@ -7,14 +7,138 @@
     align-items: center;
     font-size: 0.9rem;
     background-color: purple;
-    color: white;
+    color:  white;
     margin-right: 15px;
 }
 
+
+/* Chatbot Container */
 .react-chatbot-kit-chat-container {
+    background: #1a1a1a; /* Dark stone-like */
+    border: 3px solid #a67c52; /* Aged gold trim */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    font-family: 'Cinzel', serif; /* Fantasy font */
+    
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 500px;
+  }
+  
+  /* Inner Chat Area */
+  .react-chatbot-kit-chat-inner-container {
+    background: #0d0d0d;
+    color: #d4af37; /* Golden text */
+  }
+  
+  /* Header */
+  .react-chatbot-kit-chat-header {
+    background: linear-gradient(to bottom, #532c1e, #3a1e14);
+    color: #f4e4c1; /* Parchment white */
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px;
+    border-bottom: 2px solid #a67c52;
+  }
+  
+  /* Chat Input */
+  .react-chatbot-kit-chat-input-container {
+    background: #1a1a1a;
+    padding: 10px;
+    border-top: 2px solid #a67c52;
+  }
+  
+  .react-chatbot-kit-chat-input {
+    background: #2c1a14; /* Dark red-brown */
+    border: 2px solid #a67c52;
+    color: #f4e4c1;
+    padding: 8px;
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+  }
+  
+  .react-chatbot-kit-chat-input::placeholder {
+    color: #b08d57;
+  }
+  
+  /* Send Button */
+  .react-chatbot-kit-chat-btn-send {
+    background: #a67c52;
+    border: 2px solid #8c5a2e;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px;
+  }
+  
+  .react-chatbot-kit-chat-btn-send:hover {
+    background: #d4af37;
+    border-color: #c1913e;
+  }
+  
+  /* Chat Messages */
+  .react-chatbot-kit-chat-message-container {
+    padding: 10px;
+  }
+  
+  /* Bot Message */
+  .react-chatbot-kit-chat-bot-message-container {
+    background: url('https://www.transparenttextures.com/patterns/aged-paper.png'); /* Parchment texture */
+    color: #3a1e14;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #a67c52;
+    max-width: 80%;
+  }
+  
+  /* User Message */
+  .react-chatbot-kit-chat-bot-message {
+    background: #532c1e;
+    color: #f4e4c1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #a67c52;
+    max-width: 80%;
+  }
+  
+  /* Message Arrow */
+  .react-chatbot-kit-chat-bot-message-arrow {
+    border-right: 8px solid #a67c52;
+  }
+  
+  /* Bot Avatar */
+  .react-chatbot-kit-chat-bot-avatar-container {
+    background: #532c1e;
+    border-radius: 50%;
+    border: 2px solid #a67c52;
+    padding: 5px;
+  }
+  
+  .react-chatbot-kit-chat-bot-avatar-letter {
+    color: #f4e4c1;
+    font-weight: bold;
+  }
+  
+  /* Loading Animation */
+  .chatbot-loader-container {
+    background: transparent;
+  }
+  
+  #chatbot-loader #chatbot-loader-dot1,
+  #chatbot-loader #chatbot-loader-dot2,
+  #chatbot-loader #chatbot-loader-dot3 {
+    background: #a67c52;
+  }
+  
+  /* Error Message */
+  .react-chatbot-kit-error-container {
+    background: #532c1e;
+    border: 2px solid #a67c52;
+    color: #f4e4c1;
   }
   
