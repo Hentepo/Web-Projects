@@ -13,6 +13,10 @@ class MessageParser {
       if (reply.includes("hello")) {
         this.actionProvider.helloWorldHandler()
       }
+
+      if (reply.includes("help")) {
+        this.actionProvider.helpHandler()
+      }
     }
   }
   

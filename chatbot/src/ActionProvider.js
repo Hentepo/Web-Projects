@@ -20,6 +20,11 @@ class ActionProvider {
     this.setChatBotMessage(message);
    }
 
+   helpHandler = () => {
+    const message = this.createChatBotMessage("Available commands: Ask for directions, What time is it");
+    this.setChatBotMessage(message);
+   }
+
    setChatBotMessage = (message) => {
     this.setState(state => ({...state, messages: [...state.messages, message]}))
    }
