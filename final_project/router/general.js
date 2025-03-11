@@ -235,7 +235,7 @@ public_users.delete("/auth/review/:isbn/:reviewIndex", (req, res) => {
   }
 
   // Remove the review from the reviews array
-  book.reviews.splice(index, 1);  // This will remove one element at the specified index
+  book.reviews.splice(index, 1);  // This will remove one element at the specified index comment
 
   return res.status(200).json({
     message: "Review deleted successfully",
